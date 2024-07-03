@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root{
+    --nutmeg: hsl(14, 45%, 36%);
+    --dark-raspberry: hsl(332, 51%, 32%);
+    --white: hsl(0, 0%, 100%);
+    --rose-white: hsl(330, 100%, 98%);
+    --eggshell: hsl(30, 54%, 90%);
+    --light-grey: hsl(30, 18%, 87%);
+    --wenge-brown: hsl(30, 10%, 34%);
+    --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+body{
+    font-family: "Outfit", serif;
+    color: var(--wenge-brown);
+    font-weight: 500;
+    background-color: var(--eggshell);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: "Young Serif", serif;
+    color: var(--dark-charcoal);
+    font-size: 2.5em;
+}
+
+h2{
+    font-family: "Young Serif", serif;
+    color: var(--nutmeg);
+}
+
+h3{
+    color: var(--dark-raspberry);
+}
+
+
+
+ul{
+    padding-left: 20px;
+    color: var(--nutmeg);
+}
+
+ol{
+    padding-left: 20px;
+}
+
+ol li::marker{
+    padding-left: 20px;
+    color: var(--nutmeg);
+    font-weight: 600;
+}
+
+ol li{
+    padding-left:20px;
+    color:var(--wenge-brown);
+    line-height: 30px;
+    font-weight: 400;
+}
+
+ul li{
+    padding-left:20px;
+    color:var(--wenge-brown);
+    line-height: 30px;
+}
+
+hr{
+    margin: 2em 0;
+    color: var(--light-grey);
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    border-bottom: 1px solid var(--light-grey);
+    line-height: 2.5em;
+}
+
+
+
+#contenedor{
+    background-color: var(--white);
+    width: 740px;
+    max-width: calc( 100vw - 40px);
+    padding: 40px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-top:100px;
+    margin-bottom: 100px;
+}
+
+#contenedor img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.preparacion{
+    background-color: var(--rose-white);
+    padding: 20px 40px;
+    border-radius: 20px;
+    margin: 2em 0;
+}
+
+.noborder{
+    border-bottom: 0px;
+}
+
+.rojo{
+    color: var(--nutmeg);
+    font-weight: 600;
+}
+
+.margen{
+    padding-left: 40px;
+}
+
+.preparacion ul{
+    padding-left: 20px;
+    color: var(--dark-raspberry);
+}
+
+.preparacion ul li{
+    padding-left:20px;
+    color:var(--wenge-brown);
+    line-height: 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    h1{
+        font-size: 2em;
+    }
+    #contenedor {
+      width: 100%;
+      margin: 0 ;
+      padding: 0;
+      max-width:none;
+
+    }
+
+    .receta{
+        margin: 0 40px 40px;
+    }
+  }
